@@ -1,0 +1,7 @@
+
+<% reviews.each do |review| %>
+  <div>
+    <p>Rating: <%= render partial: "ratings/star_rating", locals: { rating: review.rating }%> </p>
+    <p><%= review.description %></p>
+  </div>
+<% end %>

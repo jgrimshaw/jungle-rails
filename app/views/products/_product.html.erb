@@ -5,6 +5,7 @@
       <h4><%= product.name %></h4>
     <% end %>
   </header>
+  <p>rating: <%= render partial: "ratings/star_rating", locals: { rating: product.rating }%> </p>
   <p class="description">
     <%= product.description %>
   </p>

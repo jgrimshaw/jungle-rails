@@ -1,0 +1,17 @@
+.star {
+    display: inline-block;
+    width: 20px;
+    text-align: center;
+    color: gray;
+}
+.star.gold { color: gold; }
+.star.gold-gray { color: gray; }
+.star.gold-gray:after {
+    display: inline-block;
+    color: gold;
+    content: '\2605';
+    position: absolute;
+    margin-left: -16px;
+    width: 8px;
+    overflow: hidden;
+}

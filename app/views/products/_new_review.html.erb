@@ -1,0 +1,14 @@
+<%= form_for([@product, @review]) do |f| %>
+  <div>
+    Rating: <%= select_tag("review[rating]", options_for_select(0.upto(5).map{|i| [i.to_s, i]})) %>
+  </div>
+  <div>
+    Review:
+    <%= f.text_area :description, rows: 4 %>
+  </div>
+
+  <div>
+    <%= f.submit %>
+  </div>
+
+<% end %>

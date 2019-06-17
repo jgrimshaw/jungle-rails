@@ -6,6 +6,8 @@ class ProductsController < ApplicationController
 
   def show
     @product = Product.find params[:id]
+    @review = @product.reviews.build
+    @reviews = @product.reviews.select {|r| r.persisted? }
   end
 
 end
