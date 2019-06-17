@@ -15,8 +15,8 @@ A mini e-commerce application built with Rails 4.2 for purposes of teaching Rail
 8. Put Stripe (test) keys into appropriate .env vars
 9. Run `bin/rails s -b 0.0.0.0` to start the server
 
-[screen shot 1]()
-[screen shot 2]()
+[screen shot 1](https://github.com/jgrimshaw/jungle-rails/blob/master/docs/Screen%20Shot%201.png?raw=true)
+[screen shot 2](https://github.com/jgrimshaw/jungle-rails/blob/master/docs/Screen%20Shot%202.png?raw=true)
 
 ## Stripe Testing
 
