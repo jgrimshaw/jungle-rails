@@ -9,10 +9,11 @@
   <table>
 
     <thead>
-      <tr style="padding: 30px" >
+      <tr>
+
         <td colspan="2">Product</td>
-        <td >Quantity</td>
-        <td >Price</td>
+        <td style="padding-left: 20px; padding-right: 20px">Quantity</td>
+        <td>Price</td>
       </tr>
     </thead>
 
@@ -21,7 +22,7 @@
       <% @order.line_items.each do |item| %>
         <%= render partial: "line_item", locals: { line_item: item } %>
       <% end %>
-      <td style="padding: 30px" colspan="4"><h1>Total: <%=@order.total %></h1></td>
+      <td style="padding: 30px;" colspan="4"><h3>Total: <%=@order.total %></h3></td>
     </tbody>
 
   </table>
